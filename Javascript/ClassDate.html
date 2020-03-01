@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>ClassDate</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        
+        <form name="frelogio">
+            <input type="text" name="rel" size="10"/>
+
+        </form>
+        
+    </body>
+    <script>
+
+        let data = new Date();
+        
+        let meses = new Array("Janeiro","Fevereiro","Março","Abril","Maio","Junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezembro");
+        let dias = new Array("Domingo","Segunda","Terça","Quarta","Quinta","Sexta","Sábado");
+
+        document.write(dias[data.getDay()] +", "+ data.getDate()+" de "+ meses[data.getMonth()]+" de "+ data.getFullYear() ); document.write("<br>");
+
+        function movrel(){
+            let relogio = new Date();
+            let hora = relogio.getHours();
+            let minutos = relogio.getMinutes();
+            let segundos = relogio.getSeconds();
+    
+            if(hora < 10){
+                hora = "0" + relogio.getHours();
+            }
+            if(minutos < 10){
+                minutos = "0" + relogio.getMinutes();
+            }
+            if(segundos < 10){
+                segundos = "0" + relogio.getSeconds();
+            }
+            let impHoras = hora + ":" + minutos + ":" + segundos;
+            
+           // document.write(impHoras);
+            
+            document.frelogio.rel.value=impHoras;
+
+            setTimeout("movrel()","1000");
+
+        }movrel();
+        
+        
+        
+
+    </script>
+</html>
+

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Listagem com links</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <select name="Bebidas" onchange="abrepg(value)">
+            <option value="./JS6_sites/refrigerante.html">Refrigerante</option>
+            <option value="./JS6_sites/cerveja.html">Cerveja</option>
+            <option value="./JS6_sites/vinho.html">Vinho</option>
+            <option value="./JS6_sites/agua.html">Água</option>
+        </select>
+    </body>
+    <script lang="javascript">
+
+        function abrepg(link){
+            window.location.href=link
+            //window.open(link);
+        }
+
+    </script>
+
+</html>

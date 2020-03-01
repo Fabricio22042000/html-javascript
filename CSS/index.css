@@ -1,0 +1,58 @@
+body{   background-image: url(../Aula13-14\ layout1/fundo.gif);
+        background-repeat: repeat-x;               
+}
+#logo{  position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 150px;
+        height: 150px;
+}
+#módulos{   position: absolute;
+            top: 94px;
+            left: 150px;
+            width: 167px;
+            height: 33px;                    
+}
+#material{  position: absolute;
+            top: 94px;
+            left: 317px;
+            width: 167px;
+            height: 33px;
+}
+#salas{ position: absolute;
+        top: 94px;
+        left: 484px;
+        width: 167px;
+        height: 33px;
+}
+#menu{  position: absolute;
+        top: 150px;
+        left: 0px;
+        width: 770px;
+        height: 30px;
+        text-align: right;
+        line-height: 20px;
+        word-spacing: 10px;
+        color: #a0a0a0;
+        font-family: arial;
+        font-size: 15px;
+}
+#banner{    position: absolute;
+            top: 180px;
+            left: 0px;
+            width: 770px;
+            height: 308px;
+}
+.lnkmenu{       color: #a0a0a0;
+                text-decoration: none;
+                font-weight: bold;
+}
+.lnkmenu:hover{ color: #053315;
+                text-decoration: underline;                       
+}
+#main{  position: absolute;
+        top: 0px;
+        left: 50%;
+        width: 770px;
+        margin-left: -385px;
+}

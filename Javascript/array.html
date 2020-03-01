@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Fabricio</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        
+    </body>
+    <script lang="javascript">
+        let nome = new Array();
+        let i;
+        let num = new Array(7,3,5,1,9,2,0,4,6,8);
+
+        nome[0]="bola"; 
+        nome[1]="pente";
+        nome[2]="sapato";
+        nome[3]="avião";
+        nome[4]="mouse";
+        nome[5]="livro";
+        nome[6]="Espada";
+
+        nome.push("Carro");
+        nome.push("TV");
+
+        nome.pop();
+        nome.pop();
+        nome.pop();
+
+        nome.unshift("boneco");
+        nome.unshift("porta");
+
+        nome.shift();
+        nome.shift();
+        nome.shift();
+
+
+
+        for(i=0;i < nome.length;i++){
+        
+        document.write(nome[i]);
+        document.write("<br>");
+            
+        }
+        
+        document.write("<hr>");
+
+        num.sort();
+        
+        for(i=0;i<num.length;i++){
+
+            document.write(i);
+            document.write("<br>");
+        }
+    </script>
+</html>

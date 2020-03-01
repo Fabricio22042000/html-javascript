@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Formulários</title>
+        <link rel="stylesheet" type="text/css" href="CSS/form.css">
+    </head>
+    <body>
+        <form name="Form_Fabricio" method="POST" action="recebe.html">
+            <label>Nome:</label><br/>
+            <input type="text" name="form_nome" size="40" maxlength="40"/><br/><br/>
+            
+            <label>Senha:</label><br>
+            <input type="password" name="form_senha" size="40" maxlength="20"/><br/><br/>
+
+            <label>Qual esporte você pratica?</label><br/>
+            <input type="checkbox" name="form_futebol" value="futebol"/> <label>Futebol</label><br/>
+            <input type="checkbox" name="form_volei" value="volei"/> <label>Vôlei</label><br/>
+            <input type="checkbox" name="form_basquete" value="basquete"/> <label>Basquete</label><br/><br/>
+
+            <label>Possui veículo?</label><br/>
+            <input type="radio" name="form_veiculo" value="s"/> <label>Sim</label><br/>
+            <input type="radio" name="form_veiculo" value="n"/> <label>Não</label><br/><br/>
+
+            <label>Estado:</label><br/>
+            <select name="form_estado">
+                <option value="PB">Paraíba</option>
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="MG">Minas Gerais</option>
+            </select><br/><br/>
+            
+            <label>Comentário:</label><br/>
+            <textarea nome="form_comentario" cols="42" rows="5"></textarea><br/><br/>
+
+            <input class="button" type="submit" value="enviar"/>
+            <input class="button" type="reset" value="limpar"/>
+            <input class="button" type="button" value="Sem ação"/>
+        </form>
+    </body>
+
+</html>

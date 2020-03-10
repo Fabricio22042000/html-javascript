@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário</title>
+</head>
+<body>
+    <form method="POST" name="f_formulario" action="">
+        <label>Nome:</label><br/>
+        <input type="text" name="f_nome" size="40" maxlength="35"><br/><br/>
+
+        <label>Senha:</label><br/>
+        <input type="password" size="20" name="f_senha" maxlength="10"><br/><br/>
+
+        <label>Possui veículo próprio?</label><br/>
+        <input type="radio" name="f_carro" value="s">Sim <br/>
+        <input type="radio" name="f_carro" value="n">Não <br/><br/>
+
+        <label>Caso possui veículo, qual a marca?</label><br/>
+        <input type="checkbox" name="f_vw" value="vw">VW <br/>
+        <input type="checkbox" name="f_gm" value="gm">GM <br/>
+        <input type="checkbox" name="f_fiat" value="fiat">FIAT <br/>
+        <input type="checkbox" name="f_ford" value="ford">FORD <br/><br/>
+
+        <select name="f_estado">
+            <option value="SP">São paulo</option>
+            <option value="PB">Paraíba</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="RJ">Rio de Janeiro</option>
+        </select><br/><br/>
+
+        <label>Deixe seu comentário:</label><br/>
+        <textarea name="f_comentario"cols="30" rows="5"></textarea><br/><br/>
+
+        <input type="submit" value="enviar">
+        <input type="reset" value="limpar">
+        <input type="button" value="não tenho ação">
+
+
+
+
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,11 @@
+body section, header, footer{    
+    padding-left: 30px;
+    padding-right: 30px;
+    background-image: linear-gradient(to right, #808080, #606060, #404040);
+    
+}
+
+#rodape {
+    margin-top: 51px;
+
+}
